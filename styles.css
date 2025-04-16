@@ -1,0 +1,50 @@
+/* Grundlegende Stileinstellungen */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    color: #33FF00;
+    /* klassisches grün */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container für den Inhalt */
+.terminal-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Terminal Text-Stil */
+.prompt {
+    color: #66FF66;
+}
+
+/* Links im Terminal-Stil */
+a {
+    color: #33FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Hinzufügen eines blinkenden Cursors */
+.cursor {
+    display: inline-block;
+    background-color: #33FF00;
+    width: 10px;
+    margin-left: 5px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
